@@ -14,8 +14,6 @@
         font-size: 2em;
         font-weight: bold;
       }
-
-
     </style>
 
   </head>
@@ -23,7 +21,14 @@
 
     <div id="mydiv" >Hello world</div>
     <script>
-      //code here
+      //Event listener is a function/method that listens some action. I.E. hover, clicks etc...
+      let yellowBox = document.getElementById("mydiv");
+      yellowBox.addEventListener("mouseout", window.onload=function() {
+        yellowBox.textContent = "Hello World!"
+      })
+      yellowBox.addEventListener("mouseover", window.onload=function() {
+        yellowBox.textContent = "Can I help you?"
+      })
     </script>
   </body>
 </html>
