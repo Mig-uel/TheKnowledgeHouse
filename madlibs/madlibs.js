@@ -1,5 +1,5 @@
 function madlibs() {
-  var player = parseInt(prompt("Would you like Story One or Story Two?"));
+  var player = parseInt(prompt("Would you like Story One or Story Two? (Enter 1 or 2)"));
 
   if (player < 1 || player > 2) {
     console.log("Unknown choice!");
