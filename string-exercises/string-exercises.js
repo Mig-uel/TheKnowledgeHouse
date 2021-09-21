@@ -92,12 +92,6 @@ function notBad(str) {
     strList.push("good")
   }
 
-  // for (i = 0; i < strList.length; i++) {
-  //   if (strList[i] === "bad!") {
-  //     console.log("worked!")
-  //   }
-  // }
-  console.log(strList)
   return strList.join(" ")
 }
 console.log(notBad('This dinner is not that bad'));
