@@ -98,6 +98,6 @@ function notBad(str) {
   //   }
   // }
   console.log(strList)
-  return strList
+  return strList.join(" ")
 }
 console.log(notBad('This dinner is not that bad'));
