@@ -81,10 +81,23 @@ console.log(verbing("swiming"));
 //write answer below
 
 function notBad(str) {
-  let i = str.trim().split(" ");
 
-  for (j = 0; j < str.length; j++) {
+  let strList = str.trim().split(" ");
+
+  let not = strList.indexOf("not");
+  let bad = strList.indexOf("bad");
+
+  if (not < bad) {
+    strList.splice(not,bad)
+    strList.push("good")
   }
-  return i
+
+  // for (i = 0; i < strList.length; i++) {
+  //   if (strList[i] === "bad!") {
+  //     console.log("worked!")
+  //   }
+  // }
+  console.log(strList)
+  return strList
 }
-console.log(notBad('This dinner is not that bad!'));
+console.log(notBad('This dinner is not that bad'));
