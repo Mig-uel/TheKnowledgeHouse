@@ -79,3 +79,12 @@ console.log(verbing("swiming"));
 //notBad('This movie is not so bad!'): 'This movie is good!'
 //notBad('This dinner is bad!'): 'This dinner is bad!'
 //write answer below
+
+function notBad(str) {
+  let i = str.trim().split(" ");
+
+  for (j = 0; j < str.length; j++) {
+  }
+  return i
+}
+console.log(notBad('This dinner is not that bad!'));
