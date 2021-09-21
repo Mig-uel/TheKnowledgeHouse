@@ -90,8 +90,10 @@ function notBad(str) {
   if (not < bad) {
     strList.splice(not,bad)
     strList.push("good")
+    return strList.join(" ")
   }
-
-  return strList.join(" ")
+  else {
+    return strList.join(" ")
+  }
 }
-console.log(notBad('This dinner is not that bad'));
+console.log(notBad('This dinner is that bad'));
