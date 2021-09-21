@@ -87,7 +87,12 @@ function notBad(str) {
   let not = strList.indexOf("not");
   let bad = strList.indexOf("bad");
 
-  if (not < bad) {
+  // console.log(strList); Testing
+
+  if (not > bad) {
+    return str;
+  }
+  else if (not < bad) {
     strList.splice(not,bad);
     strList.push("good");
     return strList.join(" ");
@@ -95,7 +100,6 @@ function notBad(str) {
   else {
     return str;
   }
-  console.log(strList);
 }
 
-console.log(notBad('This dinner is not that bad'));
+console.log(notBad('This dinner is not bad'));
