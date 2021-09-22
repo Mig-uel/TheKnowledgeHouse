@@ -1,4 +1,5 @@
-/* HTML
+//PASTE THIS IN YOUR HTML FILE\\
+/*
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,6 +14,8 @@
   </body>
 </html>
 */
+
+//JavaScript Section\\
 
 let starbucks = []
 
