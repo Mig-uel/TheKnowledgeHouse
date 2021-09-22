@@ -22,5 +22,6 @@ let starbucks = []
 function addFruits() {
   let userInput = prompt("Welcome to Starbucks! \nEnter a fruit: ");
   starbucks.push(userInput);
-  console.log(starbucks)
+  starbucks.sort()
+  console.log('<p>' + starbucks + '</p>')
 }
