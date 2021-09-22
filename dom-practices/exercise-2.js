@@ -25,12 +25,6 @@
 
         elementToChange.addEventListener("click", function(event) {
           elementToChange.style.backgroundColor = colors[i];
-          // if (i >= colors.length) {
-          //   //if i has a greater number than the length
-          //   // of the array
-          //   // reset it back to 0
-          //   // i = 0;
-          //   // i = Math.floor(Math.random() * 10);
         })
       }
     </script>
