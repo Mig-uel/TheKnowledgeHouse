@@ -20,3 +20,4 @@ switch (favoriteMovie) {
   default:
     moviePhrase = "Great movie choice!"
 }
+console.log(moviePhrase);
