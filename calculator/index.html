@@ -1,7 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="style
-    .css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -12,42 +11,42 @@
 			<!--
         Create 1st row of buttons for user to click on as input
 			-->
-			<input type="button" value="7">
-			<input type="button" value="8">
-			<input type="button" value="9">
-			<input type="button" value="+">
+			<input type="button" value="7" onclick="input(this)">
+			<input type="button" value="8" onclick="input(this)">
+			<input type="button" value="9" onclick="input(this)">
+			<input type="button" value="+" onclick="input(this)">
 			<br>
 			<!--
         Create 2nd row of buttons for user to click on as input
       -->
-			<input type="button" value="4">
-			<input type="button" value="5">
-			<input type="button" value="6">
-			<input type="button" value="-">
+			<input type="button" value="4" onclick="input(this)">
+			<input type="button" value="5" onclick="input(this)">
+			<input type="button" value="6" onclick="input(this)">
+			<input type="button" value="-" onclick="input(this)">
 			<br>
 			<!--
          Create 3rd row of buttons for user to click on as input
 			-->
-			<input type="button" value="1">
-			<input type="button" value="2">
-			<input type="button" value="3">
-			<input type="button" value="*">
+			<input type="button" value="1" onclick="input(this)">
+			<input type="button" value="2" onclick="input(this)">
+			<input type="button" value="3" onclick="input(this)">
+			<input type="button" value="*" onclick="input(this)">
 			<br>
 			<!--
         Create 4th row of buttons for user to click on as input
       The "C" button clears the input/result in the placeholder, call function "clearbtn"
       -->
-			<input type="button" value="0">
-			<input type="button" value=".">
-			<input type="button" value="C">
-			<input type="button" value="/">
+			<input type="button" value="0" onclick="input(this)">
+			<input type="button" value="." onclick="input(this)">
+			<input type="button" value="C" onclick="clearDisplay()">
+			<input type="button" value="/" onclick="input(this)">
 			<br>
 			<!--
 			  Create 5th row of buttons for user to click on
         ',' used to seperate numbers when finding average
         The "=" button invokes the "eval" function to perform the calucation of the expression
 			-->
-      <input type="button" value=",">
+      <input type="button" value="," onclick="input(this)">
       <input type="button" value="AVG" style="width: 90px">
       <input type="button" value="=" style="width: 90px">
    </form>
