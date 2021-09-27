@@ -29,3 +29,33 @@ function arraySum(nums) {
 }
 let numsArr = [1,2,3,4,5];
 console.log(`Part 3: ${arraySum(numsArr)}`);
+
+// Part 4
+console.log("Part 4: ")
+for(let i = 9; i >= 0; i--) {
+  console.log(i);
+}
+
+//Part 5
+function factorial(num) {
+  var fac = 1;
+  while(num != 0) {
+    fac *= num;
+    num--;
+  }
+  return fac;
+}
+console.log(`Part 5: The factorial of 5 is ${factorial(5)}`);
+
+//Part 6
+function sums() {
+  let userInput = prompt('Up to what number "n" would you like to add up? ');
+  let sum = 0;
+  for (let i = 0; i <= userInput; i++) {
+    sum+=i;
+  }
+  return sum;
+}
+console.log(`Part 6: The sum of the numbers is: ${sums()}`);
+
+//Part 7
