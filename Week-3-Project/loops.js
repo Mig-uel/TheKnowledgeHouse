@@ -59,3 +59,17 @@ function sums() {
 console.log(`Part 6: The sum of the numbers is: ${sums()}`);
 
 //Part 7
+function letterZ() {
+  let str = "donuts";
+  let strArr = [];
+  for(let i = 0; i < str.length; i++) {
+    if (i%2 === 0+1) {
+      strArr.push("z");
+    }
+    else {
+      strArr.push(str[i])
+    }
+  }
+  return strArr;
+}
+console.log(`Part 7: ${letterZ()}`);
