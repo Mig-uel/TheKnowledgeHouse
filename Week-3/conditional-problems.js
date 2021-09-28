@@ -5,14 +5,18 @@ let longest = lunchArray[0].length;
 
 for(let i = 1; i < lunchArray.length; i++) {
   if(longest < lunchArray[i].length) {
-    temp = lunchArray[i]
+    temp = lunchArray[i];
     longest = lunchArray[i].length;
   }
   else {
     temp = temp;
   }
 }
-console.log(`Part A: The longest word in the array is ${temp} and it is ${longest} words long!`)
+console.log(`Part A: The longest word in the array is ${temp} and it is ${longest} words long!`);
+
+// Part A - Question 4
+// I would use split(" ") and create new array from the words that were split between the spaces.
+// Then, follow what I did above.
 
 //Part B
 function odd() {
@@ -44,22 +48,22 @@ console.log(`Part C: The factorial of 5 is ${factorial(5)}`);
 let mpg = 120;
 
 if (mpg >= 120) {
-  console.log("Part D: If you are using the Tom Ogle fuel system, props!")
+  console.log("Part D: If you are using the Tom Ogle fuel system, props!");
 }
 else if (mpg > 35) {
-  console.log("Part D: The fish of the sea smile at your conservation!")
+  console.log("Part D: The fish of the sea smile at your conservation!");
 }
 else if (mpg > 29) {
-  console.log("Part D: Not many gas stops will be taken!")
+  console.log("Part D: Not many gas stops will be taken!");
 }
 else if (mpg > 20) {
-  console.log("Part D: Atmosphere smiles at your decision!")
+  console.log("Part D: Atmosphere smiles at your decision!");
 }
 else if (mpg > 16) {
-  console.log("Part D: It's palpable!")
+  console.log("Part D: It's palpable!");
 }
 else if (mpg > 10) {
-  console.log("Part D: Planet still frowns upon this, and so does your wallet!")
+  console.log("Part D: Planet still frowns upon this, and so does your wallet!");
 }
 else if (mpg <= 10) {
   console.log("Part D: Gas guzzler!");
