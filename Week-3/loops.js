@@ -44,22 +44,23 @@ console.log(`The duplicate number is ${dupes([2,7,5,5,8,3])}`);
 //your log should show "For 88, you got a B" "For 90 you got an A"etc..
 
 function assignGrade() {
-  for (let i = 60; i <= 100; i++) {
+  for (let grade = 60; grade <= 100; grade++) {
     switch (true) {
       case grade >= 90:
-          console.log(`For number grade ${i}, you get letter grade A`);
+          console.log(`For number grade ${grade}, you get letter grade A`);
           break;
       case grade >= 80:
-          console.log(`For number grade ${i}, you get letter grade B`);
+          console.log(`For number grade ${grade}, you get letter grade B`);
           break;
       case grade >= 70:
-          console.log(`For number grade ${i}, you get letter grade C`);
+          console.log(`For number grade ${grade}, you get letter grade C`);
           break;
       case grade >= 60:
-          console.log(`For number grade ${i}, you get letter grade D`);
+          console.log(`For number grade ${grade}, you get letter grade D`);
           break;
       default:
-          console.log(`For number grade ${i}, you get letter grade F`);
+          console.log(`For number grade ${grade}, you get letter grade F`);
         };
   }
 }
+assignGrade();
