@@ -8,6 +8,6 @@ function palindrome() {
     alert(`${userInput} is a palindrome -> ${reversed}`);
   }
   else {
-    alert(`${userInput} is not a palindrome -> ${reversed}`)
+    alert(`${userInput} is not a palindrome -> ${reversed}`);
   }
 }
