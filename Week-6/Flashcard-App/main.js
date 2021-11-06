@@ -23,18 +23,20 @@ function addCard() {
 
     card.innerHTML = `
                         <h3>${question}</h3><br>
-                        <a id = "toggle-${counter}" href = "#" > Show / Hide Answer</a > <br>
-                        <p class="answer" id="answer-${counter}">${answer}</p><br>
+                        <a id="toggle-${counter}" href="#"> Show/Hide Answer</a><br>
+                        <p id="answer-${counter}">${answer}</p>
                         <button onclick="document.getElementById(${counter}).remove();" class="btn btn-danger type=" button" id="delete-${counter}">Delete</button>
+                        <button class="btn btn-warning type="button" id=edit-${counter}">Edit</button>
                       `;
-    // <button class="btn btn-warning type="button" id=edit-${counter}">Edit</button>
     parent.appendChild(card);
+
     document.getElementById("question-text").value = "";
     document.getElementById("answer-text").value = "";
 
     let cardForm = document.getElementById("create-card")
     cardForm.style.display = "none";
   });
+
 }
 addCard();
 
