@@ -18,18 +18,18 @@ function addCard() {
     let answer = document.getElementById("answer-text").value;
     let card = document.createElement("li");
 
-    card.className = "flashcard";
+    card.className = "flashcard col-xl-2";
     card.id = counter;
 
     card.innerHTML = `
-                        <h1>${question}</h1><br>
-                        <a id="toggle-${counter}" href="#">Show/Hide Answer</a><br><br>
-                        <p id="answer-${counter}">${answer}</p>
-                        <br><br>
-                        <button onclick="document.getElementById(${counter}).remove()" class="btn btn-danger type="button" id=delete-${counter}">Delete</button>
-                        <button class="btn btn-warning type="button" id=edit-${counter}">Edit</button>
+                        <h3>${question}</h3><br>
+                        <a id = "toggle-${counter}" href = "#" > Show / Hide Answer</a > <br>
+                        <p class="answer" id="answer-${counter}">${answer}</p><br>
+                        <button onclick="document.getElementById(${counter}).remove()" class="btn btn-danger type=" button" id="delete-${counter}">Delete</button>
                       `;
+    // <button class="btn btn-warning type="button" id=edit-${counter}">Edit</button>
     parent.appendChild(card);
   });
 }
 addCard();
+

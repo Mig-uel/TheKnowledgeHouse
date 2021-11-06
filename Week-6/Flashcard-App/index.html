@@ -15,7 +15,7 @@
     <title>Flashcard Application</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <br>
       <div class="row">
         <div class="col-md-12">
@@ -25,22 +25,17 @@
           <div id="create-card">
             <form id="create-card-form">
               <label for="question">Question</label><br>
-              <input type="text" name="question" id="question-text" class="input-control"/><br><br>
+              <input type="text" name="question" id="question-text" class="input-control" required/><br><br>
               <label for="answer">Answer</label><br>
-              <input type="text" name="answer" id="answer-text" class="input-control"/><br><br>
+              <input type="text" name="answer" id="answer-text" class="input-control" required/><br><br>
               <button class="btn btn-danger" type="button" id="cancel-btn">Cancel</button>
               <button class="btn btn-success" type="button" id="create-btn">Create</button>
             </form>
           </div>
         </div>
       </div>
-      <br>
-      <div class="row">
-        <div class="col-md-12">
-          <ul id="flashcard-container"></ul>
-        </div>
-      </div>
-      
+    <br>
+    <ul class="row" id="flashcard-container"></ul>
     </div>
   </body>
 </html>

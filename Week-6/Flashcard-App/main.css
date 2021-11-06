@@ -22,16 +22,16 @@ div h1 {
 #flashcard-container {
   width: 100%;
   height: auto;
-  /* border: 1px solid green; */
   list-style: none;
 }
 .flashcard {
   height: auto;
   float: left;
   padding: 20px;
-  width: 250px;
+  width: 300px;
   background-color: white;
-  /* border: 1px solid red; */
   border-radius: 5px;
   box-shadow: 5px 10px 18px #888888;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
