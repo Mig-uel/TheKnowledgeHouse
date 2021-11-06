@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <script defer src="main.js"></script>
-    <title>Flashcard Application</title>
+    <title>Flashcard App</title>
   </head>
   <body>
     <div class="container-fluid">
@@ -20,12 +20,14 @@
       <div class="row">
         <div class="col-md-12">
           <h1>Flashcard App</h1>
+          <p>Created by Miguel for The Knowledge House Week 6 Project.</p>
           <button class="btn btn-outline-success" type="button" id="add-card-btn">Add Card</button>
+          <button class="btn btn-outline-dark" type="button" id="info-card-btn">Info</button>
           
           <div id="create-card">
             <form id="create-card-form">
               <label for="question">Question</label><br>
-              <input type="text" name="question" id="question-text" class="input-control" required/><br><br>
+              <input row="2" type="text" name="question" id="question-text" class="input-control" required/><br><br>
               <label for="answer">Answer</label><br>
               <input type="text" name="answer" id="answer-text" class="input-control" required/><br><br>
               <button class="btn btn-danger" type="button" id="cancel-btn">Cancel</button>
@@ -34,8 +36,11 @@
           </div>
         </div>
       </div>
-    <br>
-    <ul class="row" id="flashcard-container"></ul>
+    <br><br>
+    <h1>Cards</h1>
+    <ul class="row" id="flashcard-container">
+    
+    </ul>
     </div>
   </body>
 </html>
