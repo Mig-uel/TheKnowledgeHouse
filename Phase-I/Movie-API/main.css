@@ -1,0 +1,23 @@
+#search-pane {
+  margin: 1em;
+  text-align: center;
+}
+
+#search-results {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.search-results-item {
+  width: 300px;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+.search-results-item-poster {
+  width: 200px;
+  height: 300px;
+}

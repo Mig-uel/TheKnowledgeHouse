@@ -1,0 +1,22 @@
+{
+  "name": "movie-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Mig-uel/Movie-API.git",
+  "author": "Miguel <miguelcastillo1000@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0"
+  },
+  "browserlist": [
+    "last 1 Chrome version",
+    "last 1 Safari version"
+  ],
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}

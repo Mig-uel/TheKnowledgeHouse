@@ -1,0 +1,264 @@
+:root {
+	--first-color: #dbe4e8;
+	--second-color: #f5f5f5;
+	--third-color: #990099;
+	--fourth-color: black;
+	--font: 'Inconsolata';
+	--shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/*Makes Font sizes respond to the device width to look great on all screens*/
+html {font-size: calc(1em + 1vw);}
+/*button and input elements for some reason don't inherit their parent's font-size so let's set it below*/
+button {font-size: inherit;}
+input {font-size: inherit;}
+
+
+body {
+	font-family: var(--font);
+	margin: 0;
+	background-color: var(--first-color);
+	padding-top: 4rem;
+	display: grid;
+	/*justify-items is used to center grid i vertically*/
+	justify-items: center;
+	justify-content: center;
+}
+
+
+/*nav*/
+.banner {
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	list-style-type: none;
+	background-color: var(--fourth-color);
+	position: fixed;
+	top: 0;
+	color: var(--third-color);
+	box-shadow: var(--shadow);
+}
+
+.title {
+	margin-left: 1em;
+	text-align: center;
+	font-size: 0.75em;
+	color: #fff;
+}
+
+a {
+	color: var(--third-color);
+	width: 100px;
+	text-decoration: none;
+}
+
+/*This :hover selector is used to select elements when you mouse over them*/
+a:hover{
+	color: var(--first-color);
+}
+
+.banner li {
+	display: inline;
+	margin: 1rem;
+}
+
+.banner ul {
+	list-style-type: none;
+}
+
+
+/*about me*/
+.about-me {
+	display: flex;
+	width: 80vw;
+	padding: 1rem;
+	margin: 0.5rem;
+	border-radius: 6px;
+	background-color: var(--second-color);
+	box-shadow: var(--shadow);
+}
+
+.profile {
+	padding: 1em;
+}
+
+.profile-pic {}
+
+.about-me-text {padding: 1em;}
+
+
+/*social media*/
+.social-media li {
+	font-size: 0.75em;
+	display: inline;
+}
+
+.social-media ul {
+	padding: 0.3rem;
+	list-style-type: none;
+}
+
+
+/*career*/
+.career {
+	display: flex;
+	margin: 0.5rem;
+	width: calc(80vw + 2rem);
+}
+
+.goals {
+	width: 45vw;
+	padding: 2rem;
+	border-radius: 6px;
+	margin-right: 1rem;
+	background-color: var(--second-color);
+	box-shadow: var(--shadow);
+}
+
+.skills {
+	width: 35vw;
+	padding: 2rem;
+	border-radius: 6px;
+	background-color: var(--second-color);
+	box-shadow: var(--shadow);
+}
+
+
+/*projects*/
+.projects {
+	display: flex;
+	flex-flow: column wrap;
+	width: 80vw;
+	padding: 1rem;
+	margin: 0.5rem;
+	border-radius: 6px;
+	background-color: var(--second-color);
+	box-shadow: var(--shadow);
+}
+
+.project h2 {
+	width: 100%;
+	margin: 1rem;
+}
+
+.project {
+	text-align: center;
+	padding: 1rem;
+	margin: 1rem;
+	width: 25%;
+	box-shadow: var(--shadow);
+	color: #fff;
+	background-color: var(--third-color);
+	border-radius: 8px;
+}
+
+.project a{
+	color: #fff;
+}
+
+/*CSS transitions allows you to change property values smoothly, over a given duration*/
+.project:hover {
+	transition:  all 0.3s cubic-bezier(0.25, 0.8, 2.5, 1);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/*contact*/
+.contact-form {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	text-align: center;
+	width: 80vw;
+	padding: 1rem;
+	margin: 5rem;
+	border-radius: 6px;
+	background-color: var(--second-color);
+	box-shadow: var(--shadow);
+}
+
+.contact {
+	text-align: left;
+	margin: 0 auto;
+}
+
+
+/*form styles*/
+input {
+	min-width: 30vw;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	padding: 0.5rem;
+}
+
+
+/*You can specify that a specific input element should be affetced by attribute*/
+input[type=button]{
+	background-color: var(--third-color);
+	color: white;
+	padding: 10px;
+	width: calc(30vw + 0.5rem);
+	border-radius: 8px;
+	box-shadow: var(--shadow);
+}
+
+input[type=susbmit]:hover {
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/*resume*/
+.jobs {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 80vw;
+	margin: 0.5rem;
+	padding: 2rem;
+	border-radius: 10px;
+	background-color: var(--second-color);
+	box-shadow: var(--shadow);
+}
+.job {
+	padding: 1rem;
+}
+
+
+/*education*/
+.education {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 80vw;
+	margin: 0.5rem;
+	padding: 2rem;
+	border-radius: 10px;
+	background-color: var(--second-color);
+	box-shadow: var(--shadow);
+}
+
+.school {
+	padding: 0.25rem;
+}
+
+
+/*footer*/
+.footer {
+	margin-top: 1rem;
+	width: 100vw;
+	background-color: var(--fourth-color);
+	color: #fff;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

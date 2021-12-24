@@ -1,0 +1,21 @@
+1) Typing a letter on a keyboard is not a simple as it seems. Firstly, the keyboard is constantly scanning to see what keys are pressed down. Once it's pressed, hitting the key sends a scan code and the computer interprets these codes. 
+
+2) Computer use input and output to create experiences. How? An example of an input would be a keyboard press and the output would be displayed on the screen. Thus, creating an experience.
+
+3) Software products are essentially "infinitely reproducible nothings" because of how much data we are creating. The more data that is created the more "infinitely reproducible nothings" will be made. To add even more, we ended up with "big data" because of how much data we are creating.
+
+4) How does code become software? Firstly, a problem needs to be handed and one must think about the problem. Then, code will be written to address the problem and the computer is expected to turn it into software once done. Overall, a lot happens behind the scene when creating and developing software.
+
+5) An algorithm does not require a computer. In other words, an algorithm solves a problem. It can also help improve code by using the best case scenario. Artificial Intelligence is based on complex algorithms.
+
+6) The DRY principle stands for Don't Repeat Yourself. Basically, you should name things once, do things once, create a function once, and let the computer repeat itself. 
+
+7) Object-oriented programming is programming that is based on the concepts of objects. Data structures or objects are defined each with its own properties or attributes. Basically, software is designed by using objects that interact with one another.
+
+8) Data can be created by people and machines. In the coding side of it, we can take that data and manipulate to our own advantage. Data is the core of most software and it is what continues the technology growth.
+
+9) A framework is like a recyclable code template. Instead of re-writing code, you can turn that code into a template or framework and avoid having to re-write it.
+
+10) Debugging is basically hunting for bugs, errors and patching code up.
+
+11) I want to learn to code because I want to create software. Also, once you know how to create software, you have the tools to start up your own company or work for someone. It's almost like being liberated.
